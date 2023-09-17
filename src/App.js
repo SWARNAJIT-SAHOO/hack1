@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { ToastContainer } from 'react-bootstrap';
+import { Card } from 'reactstrap';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
+import HomePages from './HomePage';
+import React from 'react';
+import { useState } from 'react';
+import {Row,Col} from 'reactstrap';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      
+      
+    <HomePages/>
+    
+
+
+
+    <ToastContainer/>
+    
+   </div>
   );
 }
 
